@@ -17,6 +17,11 @@ html {
 	width: 100%;
 	margin-top: 20px;
 }
+@media(max-width:768px){
+	.navegacion-principal{
+		position:absolute;
+	}
+}
 .navegacion-principal > ul{
 	text-align: center;
 }
@@ -33,6 +38,12 @@ html {
 	padding: 5px;
 	transition: all .3s ease;
 	display: inline-block;
+}
+@media(max-width:768px){
+	.navegacion-principal a{
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
 }
 .navegacion-principal a:hover{
 	transform: scale(1.1);
@@ -74,6 +85,11 @@ header{
 .contenedor article{
 	text-align: center;
 }
+@media(max-width:768px){
+	.contenedor article{
+		text-align: justify;		
+	}
+}
 .contenedor article h3{
 	margin-bottom: 20px;
 	font-size: 38px;
@@ -86,14 +102,29 @@ header{
 	border-top: 10px dotted #ccc;
 	margin-top: 40px;
 }
+@media(max-width:768px){
+	.tabla{
+		width: 100%;
+	}
+}
 .tabla .contenedor{
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+@media(max-width:768px){
+	.tabla .contenedor{
+		display: block;
+	}
+}
 .cont-tabla, .tabla-imagen{
 	width: 50%;
+}
+@media(max-width:768px){
+	.cont-tabla, .tabla-imagen{
+		width: 100%;
+	}
 }
 .cont-tabla table, .tabla-imagen img{
 	width: 100%;
@@ -105,6 +136,7 @@ header{
 .cont-tabla table td{
 	padding: 21px 30px;
 }
+
 .tabla-imagen{
 	height: 250px;
 	overflow: hidden;
